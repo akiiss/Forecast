@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		455637382C0B421B000DEFD9 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 455637372C0B421B000DEFD9 /* DGCharts */; };
+		4568CB252BCBEA51000A209E /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB242BCBEA51000A209E /* StockCell.swift */; };
+		4568CB272BCBEA97000A209E /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB262BCBEA97000A209E /* Ext.swift */; };
+		4568CB2B2BCC266C000A209E /* Gradient+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB2A2BCC266C000A209E /* Gradient+Ext.swift */; };
+		4568CB2D2BCC3704000A209E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB2C2BCC3704000A209E /* TabBarViewController.swift */; };
+		4568CB2F2BCC3871000A209E /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB2E2BCC3871000A209E /* NewsViewController.swift */; };
+		4568CB312BCC387D000A209E /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB302BCC387D000A209E /* ForecastViewController.swift */; };
+		4568CB332BCC3886000A209E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB322BCC3886000A209E /* ProfileViewController.swift */; };
+		4568CB352BCC3D1F000A209E /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB342BCC3D1F000A209E /* LoginPageViewController.swift */; };
+		4568CB372BCC3D89000A209E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB362BCC3D89000A209E /* User.swift */; };
+		4568CB392BCC3DA6000A209E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB382BCC3DA6000A209E /* SignUpViewController.swift */; };
+		4568CB3B2BCC533B000A209E /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568CB3A2BCC533B000A209E /* ModalViewController.swift */; };
+		4581E4132C0CBA7E000E85FB /* Attention_Apple.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4102C0CBA7D000E85FB /* Attention_Apple.csv */; };
+		4581E4142C0CBA7E000E85FB /* Bidirectional_Apple.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4112C0CBA7E000E85FB /* Bidirectional_Apple.csv */; };
+		4581E4152C0CBA7E000E85FB /* Vanilla_Apple.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4122C0CBA7E000E85FB /* Vanilla_Apple.csv */; };
+		4581E4192C0CBFA2000E85FB /* Attention_Amazon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4162C0CBFA2000E85FB /* Attention_Amazon.csv */; };
+		4581E41A2C0CBFA2000E85FB /* Bidirectional_Amazon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4172C0CBFA2000E85FB /* Bidirectional_Amazon.csv */; };
+		4581E41B2C0CBFA2000E85FB /* Vanilla_Amazon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4182C0CBFA2000E85FB /* Vanilla_Amazon.csv */; };
+		4581E4342C0CC0CA000E85FB /* Attention_Boeing.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E41C2C0CC0C9000E85FB /* Attention_Boeing.csv */; };
+		4581E4352C0CC0CA000E85FB /* Bidirectional_Microsoft.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E41D2C0CC0CA000E85FB /* Bidirectional_Microsoft.csv */; };
+		4581E4362C0CC0CA000E85FB /* Vanilla_Netflix.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E41E2C0CC0CA000E85FB /* Vanilla_Netflix.csv */; };
+		4581E4372C0CC0CA000E85FB /* Attention_Netflix.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E41F2C0CC0CA000E85FB /* Attention_Netflix.csv */; };
+		4581E4382C0CC0CA000E85FB /* Bidirectional_Boeing.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4202C0CC0CA000E85FB /* Bidirectional_Boeing.csv */; };
+		4581E4392C0CC0CA000E85FB /* Attention_Tesla.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4212C0CC0CA000E85FB /* Attention_Tesla.csv */; };
+		4581E43A2C0CC0CA000E85FB /* Attention_IBM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4222C0CC0CA000E85FB /* Attention_IBM.csv */; };
+		4581E43B2C0CC0CA000E85FB /* Vanilla_Nvidia.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4232C0CC0CA000E85FB /* Vanilla_Nvidia.csv */; };
+		4581E43C2C0CC0CA000E85FB /* Bidirectional_Nvidia.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4242C0CC0CA000E85FB /* Bidirectional_Nvidia.csv */; };
+		4581E43D2C0CC0CA000E85FB /* Vanilla_Microsoft.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4252C0CC0CA000E85FB /* Vanilla_Microsoft.csv */; };
+		4581E43E2C0CC0CA000E85FB /* Attention_Microsoft.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4262C0CC0CA000E85FB /* Attention_Microsoft.csv */; };
+		4581E43F2C0CC0CA000E85FB /* Vanilla_IBM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4272C0CC0CA000E85FB /* Vanilla_IBM.csv */; };
+		4581E4402C0CC0CA000E85FB /* Attention_Google.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4282C0CC0CA000E85FB /* Attention_Google.csv */; };
+		4581E4412C0CC0CA000E85FB /* Bidirectional_IBM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4292C0CC0CA000E85FB /* Bidirectional_IBM.csv */; };
+		4581E4422C0CC0CA000E85FB /* Bidirectional_Google.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E42A2C0CC0CA000E85FB /* Bidirectional_Google.csv */; };
+		4581E4432C0CC0CA000E85FB /* Vanilla_Google.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E42B2C0CC0CA000E85FB /* Vanilla_Google.csv */; };
+		4581E4442C0CC0CA000E85FB /* Vanilla_Intel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E42C2C0CC0CA000E85FB /* Vanilla_Intel.csv */; };
+		4581E4452C0CC0CA000E85FB /* Bidirectional_Tesla.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E42D2C0CC0CA000E85FB /* Bidirectional_Tesla.csv */; };
+		4581E4462C0CC0CA000E85FB /* Vanilla_Tesla.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E42E2C0CC0CA000E85FB /* Vanilla_Tesla.csv */; };
+		4581E4472C0CC0CA000E85FB /* Attention_Nvidia.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E42F2C0CC0CA000E85FB /* Attention_Nvidia.csv */; };
+		4581E4482C0CC0CA000E85FB /* Bidirectional_Netflix.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4302C0CC0CA000E85FB /* Bidirectional_Netflix.csv */; };
+		4581E4492C0CC0CA000E85FB /* Bidirectional_Intel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4312C0CC0CA000E85FB /* Bidirectional_Intel.csv */; };
+		4581E44A2C0CC0CA000E85FB /* Attention_Intel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4322C0CC0CA000E85FB /* Attention_Intel.csv */; };
+		4581E44B2C0CC0CA000E85FB /* Vanilla_Boeing.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4581E4332C0CC0CA000E85FB /* Vanilla_Boeing.csv */; };
+		459AD61F2BCCF20E00F99738 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459AD61E2BCCF20E00F99738 /* NewsAPI.swift */; };
+		459AD6212BCD5E3200F99738 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459AD6202BCD5E3200F99738 /* NewsTableViewCell.swift */; };
+		459AD6232BCDB42F00F99738 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459AD6222BCDB42F00F99738 /* ChartData.swift */; };
+		459AD62E2BCDB8B200F99738 /* AAPL_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD6242BCDB8B100F99738 /* AAPL_data.csv */; };
+		459AD62F2BCDB8B200F99738 /* MSFT_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD6252BCDB8B100F99738 /* MSFT_data.csv */; };
+		459AD6302BCDB8B200F99738 /* AMZN_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD6262BCDB8B100F99738 /* AMZN_data.csv */; };
+		459AD6312BCDB8B200F99738 /* INTC_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD6272BCDB8B100F99738 /* INTC_data.csv */; };
+		459AD6322BCDB8B200F99738 /* NFLX_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD6282BCDB8B100F99738 /* NFLX_data.csv */; };
+		459AD6332BCDB8B200F99738 /* IBM_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD6292BCDB8B100F99738 /* IBM_data.csv */; };
+		459AD6342BCDB8B200F99738 /* NVDA_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD62A2BCDB8B100F99738 /* NVDA_data.csv */; };
+		459AD6352BCDB8B200F99738 /* TSLA_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD62B2BCDB8B200F99738 /* TSLA_data.csv */; };
+		459AD6362BCDB8B200F99738 /* GOOGL_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD62C2BCDB8B200F99738 /* GOOGL_data.csv */; };
+		459AD6372BCDB8B200F99738 /* BA_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD62D2BCDB8B200F99738 /* BA_data.csv */; };
+		459AD6402BCDD31200F99738 /* AAPL_data_forecast.csv in Resources */ = {isa = PBXBuildFile; fileRef = 459AD63F2BCDD31200F99738 /* AAPL_data_forecast.csv */; };
+		45CD29592BC9BFF0000579FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD29582BC9BFF0000579FC /* AppDelegate.swift */; };
+		45CD295B2BC9BFF0000579FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD295A2BC9BFF0000579FC /* SceneDelegate.swift */; };
+		45CD295D2BC9BFF0000579FC /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD295C2BC9BFF0000579FC /* StockViewController.swift */; };
+		45CD29602BC9BFF0000579FC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 45CD295F2BC9BFF0000579FC /* Base */; };
+		45CD29622BC9BFF1000579FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45CD29612BC9BFF1000579FC /* Assets.xcassets */; };
+		45CD29652BC9BFF1000579FC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 45CD29642BC9BFF1000579FC /* Base */; };
+		45CD29772BCB26E2000579FC /* readingCsv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD29762BCB26E2000579FC /* readingCsv.swift */; };
+		45CD29792BCB2A5F000579FC /* stock_prices.csv in Resources */ = {isa = PBXBuildFile; fileRef = 45CD29782BCB2A5F000579FC /* stock_prices.csv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4568CB242BCBEA51000A209E /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		4568CB262BCBEA97000A209E /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
+		4568CB2A2BCC266C000A209E /* Gradient+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Ext.swift"; sourceTree = "<group>"; };
+		4568CB2C2BCC3704000A209E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4568CB2E2BCC3871000A209E /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		4568CB302BCC387D000A209E /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		4568CB322BCC3886000A209E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4568CB342BCC3D1F000A209E /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		4568CB362BCC3D89000A209E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4568CB382BCC3DA6000A209E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4568CB3A2BCC533B000A209E /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		4581E4102C0CBA7D000E85FB /* Attention_Apple.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Attention_Apple.csv; sourceTree = "<group>"; };
+		4581E4112C0CBA7E000E85FB /* Bidirectional_Apple.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bidirectional_Apple.csv; sourceTree = "<group>"; };
+		4581E4122C0CBA7E000E85FB /* Vanilla_Apple.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vanilla_Apple.csv; sourceTree = "<group>"; };
+		4581E4162C0CBFA2000E85FB /* Attention_Amazon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Attention_Amazon.csv; sourceTree = "<group>"; };
+		4581E4172C0CBFA2000E85FB /* Bidirectional_Amazon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bidirectional_Amazon.csv; sourceTree = "<group>"; };
+		4581E4182C0CBFA2000E85FB /* Vanilla_Amazon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vanilla_Amazon.csv; sourceTree = "<group>"; };
+		4581E41C2C0CC0C9000E85FB /* Attention_Boeing.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Attention_Boeing.csv; path = ../../../Downloads/Attention_Boeing.csv; sourceTree = "<group>"; };
+		4581E41D2C0CC0CA000E85FB /* Bidirectional_Microsoft.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Bidirectional_Microsoft.csv; path = ../../../Downloads/Bidirectional_Microsoft.csv; sourceTree = "<group>"; };
+		4581E41E2C0CC0CA000E85FB /* Vanilla_Netflix.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vanilla_Netflix.csv; path = ../../../Downloads/Vanilla_Netflix.csv; sourceTree = "<group>"; };
+		4581E41F2C0CC0CA000E85FB /* Attention_Netflix.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Attention_Netflix.csv; path = ../../../Downloads/Attention_Netflix.csv; sourceTree = "<group>"; };
+		4581E4202C0CC0CA000E85FB /* Bidirectional_Boeing.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Bidirectional_Boeing.csv; path = ../../../Downloads/Bidirectional_Boeing.csv; sourceTree = "<group>"; };
+		4581E4212C0CC0CA000E85FB /* Attention_Tesla.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Attention_Tesla.csv; path = ../../../Downloads/Attention_Tesla.csv; sourceTree = "<group>"; };
+		4581E4222C0CC0CA000E85FB /* Attention_IBM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Attention_IBM.csv; path = ../../../Downloads/Attention_IBM.csv; sourceTree = "<group>"; };
+		4581E4232C0CC0CA000E85FB /* Vanilla_Nvidia.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vanilla_Nvidia.csv; path = ../../../Downloads/Vanilla_Nvidia.csv; sourceTree = "<group>"; };
+		4581E4242C0CC0CA000E85FB /* Bidirectional_Nvidia.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Bidirectional_Nvidia.csv; path = ../../../Downloads/Bidirectional_Nvidia.csv; sourceTree = "<group>"; };
+		4581E4252C0CC0CA000E85FB /* Vanilla_Microsoft.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vanilla_Microsoft.csv; path = ../../../Downloads/Vanilla_Microsoft.csv; sourceTree = "<group>"; };
+		4581E4262C0CC0CA000E85FB /* Attention_Microsoft.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Attention_Microsoft.csv; path = ../../../Downloads/Attention_Microsoft.csv; sourceTree = "<group>"; };
+		4581E4272C0CC0CA000E85FB /* Vanilla_IBM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vanilla_IBM.csv; path = ../../../Downloads/Vanilla_IBM.csv; sourceTree = "<group>"; };
+		4581E4282C0CC0CA000E85FB /* Attention_Google.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Attention_Google.csv; path = ../../../Downloads/Attention_Google.csv; sourceTree = "<group>"; };
+		4581E4292C0CC0CA000E85FB /* Bidirectional_IBM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Bidirectional_IBM.csv; path = ../../../Downloads/Bidirectional_IBM.csv; sourceTree = "<group>"; };
+		4581E42A2C0CC0CA000E85FB /* Bidirectional_Google.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Bidirectional_Google.csv; path = ../../../Downloads/Bidirectional_Google.csv; sourceTree = "<group>"; };
+		4581E42B2C0CC0CA000E85FB /* Vanilla_Google.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vanilla_Google.csv; path = ../../../Downloads/Vanilla_Google.csv; sourceTree = "<group>"; };
+		4581E42C2C0CC0CA000E85FB /* Vanilla_Intel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vanilla_Intel.csv; path = ../../../Downloads/Vanilla_Intel.csv; sourceTree = "<group>"; };
+		4581E42D2C0CC0CA000E85FB /* Bidirectional_Tesla.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Bidirectional_Tesla.csv; path = ../../../Downloads/Bidirectional_Tesla.csv; sourceTree = "<group>"; };
+		4581E42E2C0CC0CA000E85FB /* Vanilla_Tesla.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vanilla_Tesla.csv; path = ../../../Downloads/Vanilla_Tesla.csv; sourceTree = "<group>"; };
+		4581E42F2C0CC0CA000E85FB /* Attention_Nvidia.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Attention_Nvidia.csv; path = ../../../Downloads/Attention_Nvidia.csv; sourceTree = "<group>"; };
+		4581E4302C0CC0CA000E85FB /* Bidirectional_Netflix.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Bidirectional_Netflix.csv; path = ../../../Downloads/Bidirectional_Netflix.csv; sourceTree = "<group>"; };
+		4581E4312C0CC0CA000E85FB /* Bidirectional_Intel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Bidirectional_Intel.csv; path = ../../../Downloads/Bidirectional_Intel.csv; sourceTree = "<group>"; };
+		4581E4322C0CC0CA000E85FB /* Attention_Intel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Attention_Intel.csv; path = ../../../Downloads/Attention_Intel.csv; sourceTree = "<group>"; };
+		4581E4332C0CC0CA000E85FB /* Vanilla_Boeing.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vanilla_Boeing.csv; path = ../../../Downloads/Vanilla_Boeing.csv; sourceTree = "<group>"; };
+		459AD61E2BCCF20E00F99738 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		459AD6202BCD5E3200F99738 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		459AD6222BCDB42F00F99738 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		459AD6242BCDB8B100F99738 /* AAPL_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AAPL_data.csv; sourceTree = "<group>"; };
+		459AD6252BCDB8B100F99738 /* MSFT_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MSFT_data.csv; sourceTree = "<group>"; };
+		459AD6262BCDB8B100F99738 /* AMZN_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AMZN_data.csv; sourceTree = "<group>"; };
+		459AD6272BCDB8B100F99738 /* INTC_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INTC_data.csv; sourceTree = "<group>"; };
+		459AD6282BCDB8B100F99738 /* NFLX_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NFLX_data.csv; sourceTree = "<group>"; };
+		459AD6292BCDB8B100F99738 /* IBM_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IBM_data.csv; sourceTree = "<group>"; };
+		459AD62A2BCDB8B100F99738 /* NVDA_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NVDA_data.csv; sourceTree = "<group>"; };
+		459AD62B2BCDB8B200F99738 /* TSLA_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TSLA_data.csv; sourceTree = "<group>"; };
+		459AD62C2BCDB8B200F99738 /* GOOGL_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GOOGL_data.csv; sourceTree = "<group>"; };
+		459AD62D2BCDB8B200F99738 /* BA_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BA_data.csv; sourceTree = "<group>"; };
+		459AD63F2BCDD31200F99738 /* AAPL_data_forecast.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AAPL_data_forecast.csv; sourceTree = "<group>"; };
+		45CD29552BC9BFF0000579FC /* Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45CD29582BC9BFF0000579FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45CD295A2BC9BFF0000579FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		45CD295C2BC9BFF0000579FC /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		45CD295F2BC9BFF0000579FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45CD29612BC9BFF1000579FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45CD29642BC9BFF1000579FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45CD29662BC9BFF1000579FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45CD29762BCB26E2000579FC /* readingCsv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readingCsv.swift; sourceTree = "<group>"; };
+		45CD29782BCB2A5F000579FC /* stock_prices.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stock_prices.csv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45CD29522BC9BFF0000579FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455637382C0B421B000DEFD9 /* DGCharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45CD294C2BC9BFF0000579FC = {
+			isa = PBXGroup;
+			children = (
+				45CD29572BC9BFF0000579FC /* Forecast */,
+				45CD29562BC9BFF0000579FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45CD29562BC9BFF0000579FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45CD29552BC9BFF0000579FC /* Forecast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45CD29572BC9BFF0000579FC /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				45CD29582BC9BFF0000579FC /* AppDelegate.swift */,
+				45CD295A2BC9BFF0000579FC /* SceneDelegate.swift */,
+				4568CB2C2BCC3704000A209E /* TabBarViewController.swift */,
+				4568CB342BCC3D1F000A209E /* LoginPageViewController.swift */,
+				4568CB382BCC3DA6000A209E /* SignUpViewController.swift */,
+				4568CB362BCC3D89000A209E /* User.swift */,
+				4568CB2E2BCC3871000A209E /* NewsViewController.swift */,
+				459AD6202BCD5E3200F99738 /* NewsTableViewCell.swift */,
+				459AD61E2BCCF20E00F99738 /* NewsAPI.swift */,
+				4568CB302BCC387D000A209E /* ForecastViewController.swift */,
+				4568CB322BCC3886000A209E /* ProfileViewController.swift */,
+				45CD295C2BC9BFF0000579FC /* StockViewController.swift */,
+				4568CB3A2BCC533B000A209E /* ModalViewController.swift */,
+				459AD6222BCDB42F00F99738 /* ChartData.swift */,
+				4568CB2A2BCC266C000A209E /* Gradient+Ext.swift */,
+				4568CB242BCBEA51000A209E /* StockCell.swift */,
+				4568CB262BCBEA97000A209E /* Ext.swift */,
+				45CD29762BCB26E2000579FC /* readingCsv.swift */,
+				4581E41C2C0CC0C9000E85FB /* Attention_Boeing.csv */,
+				4581E4282C0CC0CA000E85FB /* Attention_Google.csv */,
+				4581E4222C0CC0CA000E85FB /* Attention_IBM.csv */,
+				4581E4322C0CC0CA000E85FB /* Attention_Intel.csv */,
+				4581E4262C0CC0CA000E85FB /* Attention_Microsoft.csv */,
+				4581E41F2C0CC0CA000E85FB /* Attention_Netflix.csv */,
+				4581E42F2C0CC0CA000E85FB /* Attention_Nvidia.csv */,
+				4581E4212C0CC0CA000E85FB /* Attention_Tesla.csv */,
+				4581E4202C0CC0CA000E85FB /* Bidirectional_Boeing.csv */,
+				4581E42A2C0CC0CA000E85FB /* Bidirectional_Google.csv */,
+				4581E4292C0CC0CA000E85FB /* Bidirectional_IBM.csv */,
+				4581E4312C0CC0CA000E85FB /* Bidirectional_Intel.csv */,
+				4581E41D2C0CC0CA000E85FB /* Bidirectional_Microsoft.csv */,
+				4581E4302C0CC0CA000E85FB /* Bidirectional_Netflix.csv */,
+				4581E4242C0CC0CA000E85FB /* Bidirectional_Nvidia.csv */,
+				4581E42D2C0CC0CA000E85FB /* Bidirectional_Tesla.csv */,
+				4581E4332C0CC0CA000E85FB /* Vanilla_Boeing.csv */,
+				4581E42B2C0CC0CA000E85FB /* Vanilla_Google.csv */,
+				4581E4272C0CC0CA000E85FB /* Vanilla_IBM.csv */,
+				4581E42C2C0CC0CA000E85FB /* Vanilla_Intel.csv */,
+				4581E4252C0CC0CA000E85FB /* Vanilla_Microsoft.csv */,
+				4581E41E2C0CC0CA000E85FB /* Vanilla_Netflix.csv */,
+				4581E4232C0CC0CA000E85FB /* Vanilla_Nvidia.csv */,
+				4581E42E2C0CC0CA000E85FB /* Vanilla_Tesla.csv */,
+				4581E4162C0CBFA2000E85FB /* Attention_Amazon.csv */,
+				4581E4172C0CBFA2000E85FB /* Bidirectional_Amazon.csv */,
+				4581E4182C0CBFA2000E85FB /* Vanilla_Amazon.csv */,
+				4581E4102C0CBA7D000E85FB /* Attention_Apple.csv */,
+				4581E4112C0CBA7E000E85FB /* Bidirectional_Apple.csv */,
+				4581E4122C0CBA7E000E85FB /* Vanilla_Apple.csv */,
+				45CD29782BCB2A5F000579FC /* stock_prices.csv */,
+				459AD6242BCDB8B100F99738 /* AAPL_data.csv */,
+				459AD6262BCDB8B100F99738 /* AMZN_data.csv */,
+				459AD62D2BCDB8B200F99738 /* BA_data.csv */,
+				459AD62C2BCDB8B200F99738 /* GOOGL_data.csv */,
+				459AD6292BCDB8B100F99738 /* IBM_data.csv */,
+				459AD6272BCDB8B100F99738 /* INTC_data.csv */,
+				459AD6252BCDB8B100F99738 /* MSFT_data.csv */,
+				459AD6282BCDB8B100F99738 /* NFLX_data.csv */,
+				459AD62A2BCDB8B100F99738 /* NVDA_data.csv */,
+				459AD62B2BCDB8B200F99738 /* TSLA_data.csv */,
+				459AD63F2BCDD31200F99738 /* AAPL_data_forecast.csv */,
+				45CD295E2BC9BFF0000579FC /* Main.storyboard */,
+				45CD29612BC9BFF1000579FC /* Assets.xcassets */,
+				45CD29632BC9BFF1000579FC /* LaunchScreen.storyboard */,
+				45CD29662BC9BFF1000579FC /* Info.plist */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45CD29542BC9BFF0000579FC /* Forecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45CD29692BC9BFF1000579FC /* Build configuration list for PBXNativeTarget "Forecast" */;
+			buildPhases = (
+				45CD29512BC9BFF0000579FC /* Sources */,
+				45CD29522BC9BFF0000579FC /* Frameworks */,
+				45CD29532BC9BFF0000579FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Forecast;
+			packageProductDependencies = (
+				455637372C0B421B000DEFD9 /* DGCharts */,
+			);
+			productName = Forecast;
+			productReference = 45CD29552BC9BFF0000579FC /* Forecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45CD294D2BC9BFF0000579FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					45CD29542BC9BFF0000579FC = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 45CD29502BC9BFF0000579FC /* Build configuration list for PBXProject "Forecast" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45CD294C2BC9BFF0000579FC;
+			packageReferences = (
+				455637362C0B421A000DEFD9 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = 45CD29562BC9BFF0000579FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45CD29542BC9BFF0000579FC /* Forecast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45CD29532BC9BFF0000579FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4581E43A2C0CC0CA000E85FB /* Attention_IBM.csv in Resources */,
+				459AD6322BCDB8B200F99738 /* NFLX_data.csv in Resources */,
+				4581E4462C0CC0CA000E85FB /* Vanilla_Tesla.csv in Resources */,
+				459AD6372BCDB8B200F99738 /* BA_data.csv in Resources */,
+				4581E4412C0CC0CA000E85FB /* Bidirectional_IBM.csv in Resources */,
+				4581E4452C0CC0CA000E85FB /* Bidirectional_Tesla.csv in Resources */,
+				4581E41B2C0CBFA2000E85FB /* Vanilla_Amazon.csv in Resources */,
+				4581E4472C0CC0CA000E85FB /* Attention_Nvidia.csv in Resources */,
+				45CD29622BC9BFF1000579FC /* Assets.xcassets in Resources */,
+				459AD6342BCDB8B200F99738 /* NVDA_data.csv in Resources */,
+				4581E4402C0CC0CA000E85FB /* Attention_Google.csv in Resources */,
+				4581E4362C0CC0CA000E85FB /* Vanilla_Netflix.csv in Resources */,
+				4581E41A2C0CBFA2000E85FB /* Bidirectional_Amazon.csv in Resources */,
+				4581E4132C0CBA7E000E85FB /* Attention_Apple.csv in Resources */,
+				4581E4382C0CC0CA000E85FB /* Bidirectional_Boeing.csv in Resources */,
+				45CD29652BC9BFF1000579FC /* Base in Resources */,
+				459AD6352BCDB8B200F99738 /* TSLA_data.csv in Resources */,
+				459AD6332BCDB8B200F99738 /* IBM_data.csv in Resources */,
+				4581E44A2C0CC0CA000E85FB /* Attention_Intel.csv in Resources */,
+				4581E4422C0CC0CA000E85FB /* Bidirectional_Google.csv in Resources */,
+				4581E4392C0CC0CA000E85FB /* Attention_Tesla.csv in Resources */,
+				459AD6402BCDD31200F99738 /* AAPL_data_forecast.csv in Resources */,
+				4581E4492C0CC0CA000E85FB /* Bidirectional_Intel.csv in Resources */,
+				459AD62F2BCDB8B200F99738 /* MSFT_data.csv in Resources */,
+				4581E43D2C0CC0CA000E85FB /* Vanilla_Microsoft.csv in Resources */,
+				4581E4192C0CBFA2000E85FB /* Attention_Amazon.csv in Resources */,
+				4581E43C2C0CC0CA000E85FB /* Bidirectional_Nvidia.csv in Resources */,
+				459AD6302BCDB8B200F99738 /* AMZN_data.csv in Resources */,
+				4581E4352C0CC0CA000E85FB /* Bidirectional_Microsoft.csv in Resources */,
+				459AD62E2BCDB8B200F99738 /* AAPL_data.csv in Resources */,
+				4581E4342C0CC0CA000E85FB /* Attention_Boeing.csv in Resources */,
+				4581E43B2C0CC0CA000E85FB /* Vanilla_Nvidia.csv in Resources */,
+				4581E44B2C0CC0CA000E85FB /* Vanilla_Boeing.csv in Resources */,
+				4581E4142C0CBA7E000E85FB /* Bidirectional_Apple.csv in Resources */,
+				4581E43F2C0CC0CA000E85FB /* Vanilla_IBM.csv in Resources */,
+				459AD6362BCDB8B200F99738 /* GOOGL_data.csv in Resources */,
+				45CD29602BC9BFF0000579FC /* Base in Resources */,
+				459AD6312BCDB8B200F99738 /* INTC_data.csv in Resources */,
+				4581E43E2C0CC0CA000E85FB /* Attention_Microsoft.csv in Resources */,
+				4581E4372C0CC0CA000E85FB /* Attention_Netflix.csv in Resources */,
+				4581E4432C0CC0CA000E85FB /* Vanilla_Google.csv in Resources */,
+				4581E4442C0CC0CA000E85FB /* Vanilla_Intel.csv in Resources */,
+				4581E4482C0CC0CA000E85FB /* Bidirectional_Netflix.csv in Resources */,
+				45CD29792BCB2A5F000579FC /* stock_prices.csv in Resources */,
+				4581E4152C0CBA7E000E85FB /* Vanilla_Apple.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45CD29512BC9BFF0000579FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45CD295D2BC9BFF0000579FC /* StockViewController.swift in Sources */,
+				4568CB252BCBEA51000A209E /* StockCell.swift in Sources */,
+				45CD29772BCB26E2000579FC /* readingCsv.swift in Sources */,
+				45CD29592BC9BFF0000579FC /* AppDelegate.swift in Sources */,
+				4568CB352BCC3D1F000A209E /* LoginPageViewController.swift in Sources */,
+				4568CB3B2BCC533B000A209E /* ModalViewController.swift in Sources */,
+				4568CB312BCC387D000A209E /* ForecastViewController.swift in Sources */,
+				459AD6212BCD5E3200F99738 /* NewsTableViewCell.swift in Sources */,
+				459AD6232BCDB42F00F99738 /* ChartData.swift in Sources */,
+				45CD295B2BC9BFF0000579FC /* SceneDelegate.swift in Sources */,
+				4568CB372BCC3D89000A209E /* User.swift in Sources */,
+				4568CB272BCBEA97000A209E /* Ext.swift in Sources */,
+				459AD61F2BCCF20E00F99738 /* NewsAPI.swift in Sources */,
+				4568CB392BCC3DA6000A209E /* SignUpViewController.swift in Sources */,
+				4568CB2B2BCC266C000A209E /* Gradient+Ext.swift in Sources */,
+				4568CB2F2BCC3871000A209E /* NewsViewController.swift in Sources */,
+				4568CB332BCC3886000A209E /* ProfileViewController.swift in Sources */,
+				4568CB2D2BCC3704000A209E /* TabBarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45CD295E2BC9BFF0000579FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45CD295F2BC9BFF0000579FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45CD29632BC9BFF1000579FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45CD29642BC9BFF1000579FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45CD29672BC9BFF1000579FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45CD29682BC9BFF1000579FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45CD296A2BC9BFF1000579FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX5S7T58XV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Forecast/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aki.Forecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45CD296B2BC9BFF1000579FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX5S7T58XV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Forecast/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aki.Forecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45CD29502BC9BFF0000579FC /* Build configuration list for PBXProject "Forecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45CD29672BC9BFF1000579FC /* Debug */,
+				45CD29682BC9BFF1000579FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45CD29692BC9BFF1000579FC /* Build configuration list for PBXNativeTarget "Forecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45CD296A2BC9BFF1000579FC /* Debug */,
+				45CD296B2BC9BFF1000579FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		455637362C0B421A000DEFD9 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		455637372C0B421B000DEFD9 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 455637362C0B421A000DEFD9 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 45CD294D2BC9BFF0000579FC /* Project object */;
+}
